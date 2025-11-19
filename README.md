@@ -151,7 +151,7 @@ mkdir -p ~/Sites/magento
 cd $_
 
 # Run this automated one-liner from the directory you want to install your project.
-curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/onelinesetup | bash -s -- magento.test community 2.4.5-p13
+curl -s https://gist.githubusercontent.com/MaGuruDev/a24f8986866683692a877138f80cbc3f/raw/3582f049553ac841aa3a8a51ef0210d5c5ce04ec/onelinesetup | bash -s -- magento.test community 2.4.5-p13
 ```
 
 The `magento.test` above defines the hostname to use, `community` is the Magento edition, and the `2.4.5-p13` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
